@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script defer src="./script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D4U</title>
+    <link rel="stylesheet" href="error.html">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+</head>
+
+<body class="body-background">
+    <header>
+        <div class="header-background">
+            <div class="wrap">
+                <section class="nav-box">
+                    <div class="nav-logo">
+                        <img class="logo-img" src="img/logo.svg" alt="Logo">
+                    </div>
+                    <div class="nav">
+                        <div class="nav-text">
+                            <div class="nav-item-border">
+                                <a class="nav-item-inside" href="https://aliexpress.ru/wholesale?SearchText=%D0%BC%D0%B8%D0%BD%D0%B8%D0%B0%D1%82%D1%8E%D1%80%D1%8B+%D0%B4%D0%BB%D1%8F+%D0%BD%D0%B0%D1%81%D1%82%D0%BE%D0%BB%D1%8C%D0%BD%D1%8B%D1%85+%D0%B8%D0%B3%D1%80">Перейти в магазин</a>
+                            </div>
+                            <div class="nav-item-contacts">
+                                <a class="nav-item" href="#contacts-id">Контакты</a>
+                            </div>
+                            <div class="nav-item-reviews">
+                                <a class="nav-item" href="https://vk.com/topic-218884277_49302901">Отзывы</a>
+                            </div>
+                        </div>
+                        <div class="nav-r">
+                            <div class="nav-number-second-border">
+                                <div class="nav-number-border">
+                                    <img class="phone-img" src="img/phone.svg" alt="phone">
+                                    <a class="nav-number" href="#">+7 495 555 13 37</a>
+                                </div>
+                            </div>
+                            <div class="nav-button-border">
+                                <a class="nav-button" href="#popup_call">Вам перезвонить?</a>
+                            </div>                           
+                            <a class="nav-button-mini" href="#popup_call"><img src="img/phone-call.svg" alt=""></a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="gradient-box"></div>
+    </header>
+    <nav class="burger-menu">
+        <ul class="burger-list">
+            <li><a class="nav-item-burg item-burg-cont" href="#contacts-id">Контакты</a></li>
+            <li><a class="nav-item-burg" href="https://vk.com/3donlyforyou">Отзывы</a></li>
+            <li><a class="nav-item-burg" href="+7 495 555 13 37">+7 495 555 13 37</a></li>
+        </ul>
+    </nav>
+    <main class="wrap">
+        <section class="content">
+
+            <div class="box-burg">
+                <div class="nav-burger">
+                    <span></span>
+                </div>
+            </div>
+
+            <div class="box-carous">
+
+                <div class="content-carousel">
+                    <img class="firslide" src="img/ban_1.png" alt="">
+                    <img class="firslide" src="img/image_30.png" alt="">
+                </div>
+            </div>
+            <div class="content-info">
+                <p class="content-title" id="formiration_pac">3D печать для тебя</p>
+                <p class="content-text">Хочешь одну из блезняшек из Atomic Heart? А Pip-Boy? А коллекционную миниатюру самого Бога Императора? Любой ваш каприз за скромную сумму! Современные технологии в руках мастера 3D-моделирования к вашим услугам. Мастер Матвей уже наработал богатый опыт изготовления миниатюр для настольных игр, элементов косплея и обмундирования страйкболиста и будет рад помочь вам осуществить ваши самые смелые фантазии!</p>
+                    <div class="button-top-border">
+                         <a class="button-top" id="button-top" href="#popup">СФОРМИРОВАТЬ ЗАКАЗ</a>
+                    </div>
+            </div>
+            <div id="popup" class="popup">
+                <div class="popup-body">
+                    <form class="popup-form" id="popup-form">
+                        <a href="##" class="popup-close">&times;</a>
+                        <p class="popup-title">Сформировать заказ</p>
+                        <div class="popup-box">
+                            <p class="popup-data">Ваше имя
+                                <input class="popup-name" type="text">
+                            </p>
+                            <p class="popup-data">Телефон
+                                <input class="popup-number" type="text" maxlength="11">
+                            </p>
+                        </div>
+                        <p class="popup-data">Email
+                            <input class="popup-email" type="email">
+                        </p>
+                        <p class="popup-data">Расскажите, что вы хотите получить и в каких количествах
+                            <textarea class="popup-text"></textarea>
+                        </p>
+                        <div class="bottom_call">
+                            <div class="nav-button-border_1">
+                                <a class="nav-button_1" href="#sps">Отправить</a>
+                            </div>
+                                <p class="popup_call-title">Вы можете отправить нам свой готовый файл .STL, .PLY, .OBJ, .3DS</p>
+                            <div class="image-upload">
+                                <label for="file-input">
+                                    <img src="img/upload.png"/>
+                                </label>
+                                <input id="file-input" type="file" />
+                          </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+        <section class="advantages">
+            <p class="advantages-title">Почему именно мы?</p>
+            <div class="advantages-list">
+                <div class="advantages-item-border">
+                    <p class="advantages-item"><img class="advantages-img" src="img/check-mark.svg" alt="">Всегда
+                        честные
+                        цены</p>
+                </div>
+                <div class="advantages-item-border">
+                    <p class="advantages-item"><img class="advantages-img" src="img/target.svg" alt="">Высокая точность
+                        печати</p>
+                </div>
+                <div class="advantages-item-border">
+                    <p class="advantages-item"><img class="advantages-img" src="img/timer.svg" alt="">Быстрая отправка
+                        заказа</p>
+                </div>
+                <div class="advantages-item-border">
+                    <p class="advantages-item item-truck"><img class="advantages-img" src="img/truck.svg"
+                            alt="">Бесплатная
+                        доставка</p>
+                </div>
+
+                <div id="popup_call" class="popup_call">
+                    <div class="popup-body">
+                        <form class="popup_call-form" id="popup_call-form">
+                            <a href="##" class="popup-close">&times;</a>
+                            <p class="popup-title">Заказать звонок</p>
+                            <div class="popup_call-box">
+                                <p class="popup-data">Ваше имя
+                                    <input class="popup_call-number" type="text">
+                                </p>
+                                <p class="popup_call-data">Телефон
+                                    <input class="popup_call-number" type="text" maxlength="11">
+                                </p>
+                            </div>
+                            <div class="bottom_call"> 
+                                <div class="nav-button-border_1">
+                                    <a class="nav-button_1" href="#sps">Отправить</a>
+                                </div>
+                                <p class="popup_call-title">Мы перезвоним вам в течение 30 минут в будние дни с 10:00 до 22:00</p>
+                            </div>
+                        </form>
+                    </div>                   
+                </div>
+
+                <div id="sps" class="popup_call">  
+                    <div class="popup-body">
+                        <form class="popup_call-form_2" >
+                            <a href="##" class="popup-close">&times;</a>
+                            <p class="popup-title_2">Спасибо за ваш заказ,менеджер </p>
+                            <p class="popup-title_2">свяжется с вами в ближайшее время.</p>
+                            <img class="img__sps" src="img/logo.svg" alt="">
+                        </form>
+                    </div>                   
+                </div>  
+            </div>
+        </section>
+        <section class="card-block">
+            <h1 class="card-block-title">Готовые модели</h1>
+            <div class="card_sect">
+                <div class="card">
+                    <div class="card-img-box">
+                        <img class="card-img2" src="img/1.png" alt="">
+                        <img class="card-img2" src="img/2.png" alt="">
+                    </div>
+                    <div class="card-price-box">
+                        <p class="card-price">550₽</p>
+                        <p class="card-old-price">600₽</p>
+                        <p class="card-discount">-9%</p>
+                    </div>
+                    <p class="card-text">Адептус Механикус Эльсина 3д печать серого цвета разобранная и неокрашенная размер 36мм</p>
+                    <a class="card-link" href="#sell">Купить</a>
+                </div>
+                <div class="card">
+                    <div class="card-img-box">
+                        <img class="card-img2" src="img/3.png" alt="">
+                        <img class="card-img2" src="img/4.png" alt="">
+                    </div>
+                    <div class="card-price-box">
+                        <p class="card-price">570₽</p>
+                        <p class="card-old-price">620₽</p>
+                        <p class="card-discount">-8%</p>
+                    </div>
+                    <p class="card-text">Вальхалльский снайпер Виктория Василёв 3д печать серого цвета разобранная и неокрашенная размер 36мм</p>
+                    <a class="card-link" href="#sell">Купить</a>
+                </div>
+                <div class="card">
+                    <div class="card-img-box">
+                        <img class="card-img2" src="img/5.png" alt="">
+                        <img class="card-img2" src="img/6.png" alt="">
+                    </div>
+                    <div class="card-price-box">
+                        <p class="card-price">450₽</p>
+                        <p class="card-old-price">500₽</p>
+                        <p class="card-discount">-7%</p>
+                    </div>
+                    <p class="card-text">Избранная Нургла 3д печать серого цвета разобранная и неокрашенная размер 38мм</p>
+                    <a class="card-link" href="#sell">Купить</a>
+                </div>
+                <div class="card">
+                    <div class="card-img-box">
+                        <img class="card-img2" src="img/7.png" alt="">
+                        <img class="card-img2" src="img/8.png" alt="">
+                    </div>
+                    <div class="card-price-box">
+                        <p class="card-price">600₽</p>
+                        <p class="card-old-price">1200₽</p>
+                        <p class="card-discount">-50%</p>
+                    </div>
+                    <p class="card-text">Космодесант хаоса 3д печать серого цвета разобранная и неокрашенная размер 36мм</p>
+                    <a class="card-link" href="#sell">Купить</a>
+                </div>
+                <div class="card">
+                    <div class="card-img-box">
+                        <img class="card-img2" src="img/9.png" alt="">
+                        <img class="card-img2" src="img/10.png" alt="">
+                    </div>
+                    <div class="card-price-box">
+                        <p class="card-price">360₽</p>
+                        <p class="card-old-price">1000₽</p>
+                        <p class="card-discount">-72%</p>
+                    </div>
+                    <p class="card-text">Сестра битвы Агнес 3д печать серого цвета разобранная и неокрашенная размер 36мм</p>
+                    <a class="card-link" href="#sell">Купить</a>
+                </div>
+                <div class="card">
+                    <div class="card-img-box">
+                        <img class="card-img2" src="img/11.png" alt="">
+                        <img class="card-img2" src="img/12.png" alt="">
+                    </div>
+                    <div class="card-price-box">
+                        <p class="card-price">500₽</p>
+                        <p class="card-old-price">1000₽</p>
+                        <p class="card-discount">-50%</p>
+                    </div>
+                    <p class="card-text">Ассасин храма Калидус 3д печать серого цвета разобранная и неокрашенная размер 36мм</p>
+                    <a class="card-link" href="#sell">Купить</a>
+                </div>
+                <div class="card">
+                    <div class="card-img-box">
+                        <img class="card-img2" src="img/13.png" alt="">
+                        <img class="card-img2" src="img/14.png" alt="">
+                    </div>
+                    <div class="card-price-box">
+                        <p class="card-price">740₽</p>
+                        <p class="card-old-price">940₽</p>
+                        <p class="card-discount">-15%</p>
+                    </div>
+                    <p class="card-text">Берсерк Кхорна размер 36мм 3д печать серого цвета разобранный и неокрашенный</p>
+                    <a class="card-link" href="#sell">Купить</a>
+                </div>
+                <div class="card">
+                    <div class="card-img-box">
+                        <img class="card-img2" src="img/15.png" alt="">
+                        <img class="card-img2" src="img/16.png" alt="">
+                    </div>
+                    <div class="card-price-box">
+                        <p class="card-price">550₽</p>
+                        <p class="card-old-price">600₽</p>
+                        <p class="card-discount">-9%</p>
+                    </div>
+                    <p class="card-text">Женщина комиссар 3д печать серого цвета разобранная и неокрашенная размер 36мм</p>
+                    <a class="card-link" href="#sell">Купить</a>
+                </div>
+                <div class="card">
+                    <div class="card-img-box">
+                        <img class="card-img2" src="img/img1.svg" alt="">
+                    </div>
+                    <div class="card-price-box">
+                        <p class="card-price">99₽</p>
+                        <p class="card-old-price">550₽</p>
+                        <p class="card-discount">-82%</p>
+                    </div>
+                    <p class="card-text">Шлем штурмавика "StarWars" 65mm x 50mm</p>
+                    <a class="card-link" href="error.html">Купить</a>
+                </div>
+            </div>
+
+            <div id="sell" class="popup">
+                <div class="popup-body">
+                    <form class="popup-form" id="popup-form">
+                        <a href="##" class="popup-close">&times;</a>
+                        <p class="popup-title">Быстрый заказ</p>
+                        <div class="popup-box">
+                            <p class="popup-data">Ваше имя
+                                <input class="popup-name" type="text">
+                            </p>
+                            <p class="popup-data">Телефон
+                                <input class="popup-number" type="text" maxlength="11">
+                            </p>
+                        </div>
+                        <p class="popup-data">Email
+                            <input class="popup-email" type="email">
+                        </p>
+                        <p class="popup-data">Ваши пожелания
+                            <textarea class="popup-text"></textarea>
+                        </p>
+                        <div class="nav-button-border_1">
+                            <a class="nav-button_1" href="#sps">Отправить</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </section>
+        <section class="contacts" id="contacts-id">
+            <p class="contacts-title">Наш офис</p>
+            <div class="contacts-box">
+                <div class="contacts-list">
+                    <div class="contacts-listtxt">
+                        <p class="contacts-item1">Адрес:</p>
+                        <p class="contacts-text">г.Москва, пр. Вернадского, д.2 с.3к2</p>
+                    </div>
+                    <div class="contacts-listtxt">
+                        <p class="contacts-item2">Телефон:</p>
+                        <div class="contacts-list_in">
+                            <p class="contacts-text">+7 495 555 13 37</p>
+                            <p class="contacts-text contacts-none">доб.1050</p>
+                        </div>
+                    </div>
+                    <div class="contacts-listtxt">
+                        <p class="contacts-item3">Время работы:</p>
+                        <div class="contacts-list_in">
+                            <p class="contacts-text"> Пн-Пт 9:00 - 18:00</p>
+                            <p class="contacts-text contacts-none_e">Без выходных</p>
+                        </div>
+                    </div>
+                    <div class="contacts-none_e contacts-listtxt">
+                        <p class="contacts-item4 contacts-none">Email:</p>
+                        <p class="contacts-text contacts-none">tridforyou@yandex.ru</p>
+                    </div>
+                </div>
+                <iframe class='map'
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2250.4223160737856!2d37.49061031608623!3d55.66425600628495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54d0976c38e75%3A0x3ed4159a401608b3!2z0L_RgC4g0JLQtdGA0L3QsNC00YHQutC-0LPQviwgMTAzIC0gMiwg0JzQvtGB0LrQstCwLCAxMTk1MjY!5e0!3m2!1sru!2sru!4v1675100928801!5m2!1sru!2sru"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+        <section class="mailing-list">
+            <p class="mailing-text">Подпишись и будь в курсе самых выгодных предложений и скидок!</p>
+            <div class="mailing-box">
+                <input class="mailing-input" type="email" placeholder="Email"></input>
+                <button class="mailing-button" onclick="this.className='mailing-button-pressed'"></button>
+            </div>
+        </section>
+    </main>
+    <footer class="wrap">
+        <section class="footer">
+            <div class="footer-box">
+                <div class="footer-inf">
+                    <div class="footer-inf-box">
+                        <a class="footer-text" href="8 495 555 13 37">+7 495 555 13 37</a>
+                        <a class="footer-text" href="tridforyou@yandex.ru">tridforyou@yandex.ru</a>
+                    </div>
+                    <ul class="inf-list">
+                        <li><a class="footer-social" href="https://vk.com/3donlyforyou"><img class="footer-social-img"
+                                    src="img/vk.svg" alt=""></a></li>
+                        <li><a class="footer-social" href="https://t.me/+F3Vemm5sZTtiNDUy"><img
+                                    class="footer-social-img" src="img/tg.svg" alt=""></a></li>
+                    </ul>
+                </div>
+                <ul class="form-list">
+                    <li class="form-item-main">Покупателям</li>
+                    <li ><a class="form-item" href="https://aliexpress.ru/wholesale?SearchText=миниатюры+для+настольных+игр">Перейти в магазин</a></li>
+                    <li ><a class="form-item" href="https://vk.com/@3donlyforyou-rukovodstvo-polzovatelya">Как сделать заказ</a></li>
+                    <li ><a class="form-item" href="https://vk.com/topic-218884277_49313311">Доставка и оплата</a></li>
+                    <li ><a class="form-item" href="https://vk.com/topic-218884277_49310659">FAQ</a></li>
+                    <li ><a class="form-item" href="https://vk.com/3donlyforyou">Круг друзей</a></li>
+                    <li ><a class="form-item" href="https://vk.com/3donlyforyou">Акции</a></li>
+                </ul>
+                <ul class="form-list form-list_lef">
+                    <li class="form-item-main">Для партнеров</li>
+                    <li ><a class="form-item" href="https://vk.com/@3donlyforyou-politika-v-otnoshenii-obrabotki-personalnyh-dannyh">«Политика отношении персональных данных»</a></li>
+                    <li class="form-item"><a class="form-item" href="https://vk.com/@3donlyforyou-sotrudnichestvo-i-gipoteza-rosta">«Сотрудничество»</a></li>
+                </ul>
+                <div class="form">
+                    <p class="form-title">Появился вопрос? Напишите нам!</p>
+                    <textarea class="form-text" placeholder="Ваше сообщение"></textarea>
+                    <input class="form-name" type='text' placeholder="Введите ваше имя">
+                    <div class="form-box">
+                        <input class="form-email" type='email' placeholder="Введите ваш телефон или Email">
+                        <button class="form-button" onclick="this.className='form-button-pressed'"></button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

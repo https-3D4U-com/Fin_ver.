@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script defer src="./script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D4U</title>
+    <link rel="stylesheet" href="style-error.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+</head>
+
+<body class="body-background">
+    <header>
+        <div class="header-background">
+            <div class="wrap">
+                <section class="nav-box">
+                    <div class="nav-logo">
+                        <img class="logo-img" src="img/logo.svg" alt="Logo">
+                    </div>
+                    <div class="nav">
+                        <div class="nav-text">
+                            <div class="nav-item-border">
+                                <a class="nav-item-inside" href="https://aliexpress.ru/wholesale?SearchText=%D0%BC%D0%B8%D0%BD%D0%B8%D0%B0%D1%82%D1%8E%D1%80%D1%8B+%D0%B4%D0%BB%D1%8F+%D0%BD%D0%B0%D1%81%D1%82%D0%BE%D0%BB%D1%8C%D0%BD%D1%8B%D1%85+%D0%B8%D0%B3%D1%80">Перейти в магазин</a>
+                            </div>
+                            <div class="nav-item-contacts">
+                                <a class="nav-item" href="index.html">Контакты</a>
+                            </div>
+                            <div class="nav-item-reviews">
+                                <a class="nav-item" href="https://vk.com/topic-218884277_49302901">Отзывы</a>
+                            </div>
+                        </div>
+                        <div class="nav-r">
+                            <div class="nav-number-second-border">
+                                <div class="nav-number-border">
+                                    <img class="phone-img" src="img/phone.svg" alt="phone">
+                                    <a class="nav-number" href="#">+7 495 555 13 37</a>
+                                </div>
+                            </div>
+                            <div class="nav-button-border">
+                                <a class="nav-button" href="#popup_call">Вам перезвонить?</a>
+                            </div>                           
+                            <a class="nav-button-mini" href="#popup_call"><img src="img/phone-call.svg" alt=""></a>
+                        </div>
+                        <div class="nav-burger">
+                            <span></span>
+                        </div>
+                    </div>
+                    <nav class="burger-menu">
+                        <ul class="burger-list">
+                            <li><a class="nav-item" href="#contacts-id">Контакты</a></li>
+                            <li><a class="nav-item" href="https://vk.com/3donlyforyou">Отзывы</a></li>
+                        </ul>
+                    </nav>
+                </section>
+            </div>
+        </div>
+        <div class="gradient-box"></div>
+    </header>
+
+
+    <main class="wrap">
+        <section class="error">
+            <div class="error-images">
+                <div class="er_1">
+                    <img class="error-left" src="img/404left.png" alt="Error left part">
+                </div>
+                <div class="er_2">
+                    <img class="error_mid" src="img/404.png" alt="Error part">
+                </div>
+                <div class="er_3">
+                    <img class="error-right" src="img/404right.png" alt="Error right part">
+                </div>
+            </div>
+            <!-- <div class="collage_1">
+                <div class="collage_2"> 
+                    <div class="collage">
+                        <img class="collage__img"  src="img/404left.png" alt="Error left part">
+                    </div>
+
+                    <div class="collage_mid">
+                        <img class="collage__img"  src="img/404.png" alt="Error part">
+                    </div>
+
+                    <div class="collage">
+                        <img class="collage__img"  src="img/404right.png" alt="Error right part">
+                    </div>
+                </div>
+            </div> -->
+        </section>
+
+        <div id="popup_call" class="popup_call">
+            <div class="popup-body">
+                <form class="popup_call-form" id="popup_call-form">
+                    <a href="##" class="popup-close">&times;</a>
+                    <p class="popup-title">Заказать звонок</p>
+                    <div class="popup_call-box">
+                        <p class="popup-data">Ваше имя
+                            <input class="popup_call-number" type="text">
+                        </p>
+                        <p class="popup_call-data">Телефон
+                            <input class="popup_call-number" type="text" maxlength="11">
+                        </p>
+                    </div>
+                    <div class="bottom_call"> 
+                        <div class="nav-button-border_1">
+                            <a class="nav-button_1" href="#sps">Отправить</a>
+                        </div>
+                        <p class="popup_call-title">Мы перезвоним вам в течение 30 минут в будние дни с 10:00 до 22:00</p>
+                    </div>
+                </form>
+            </div>                   
+        </div>
+
+        <div id="sps" class="popup_call">  
+            <div class="popup-body">
+                <form class="popup_call-form_2" >
+                    <a href="##" class="popup-close">&times;</a>
+                    <p class="popup-title_2">Спасибо за ваш заказ,менеджер </p>
+                    <p class="popup-title_2">свяжется с вами в ближайшее время.</p>
+                    <img class="img__sps" src="img/logo.svg" alt="">
+                </form>
+            </div>                   
+        </div>  
+
+    </main >
+
+            <div class="wight">
+                <div class="error-texts">
+                    <a class="error-text">Здесь ничего нет</a>
+                    <a class="error-text">Найдите то, что вы ищите на нашем сайте</a>
+                </div>
+            </div>
+
+    
+    <main class="wrap">
+        <section class="Error">
+            <div class="error-info">
+                <a class="button-top" id="button-top" href="index.html">Перейти в магазин </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="wrap">
+        <section class="footer">
+            <div class="footer-box">
+                <div class="footer-inf">
+                    <div class="footer-inf-box">
+                        <a class="footer-text" href="8 495 555 13 37">+7 495 555 13 37</a>
+                        <a class="footer-text" href="tridforyou@yandex.ru">tridforyou@yandex.ru</a>
+                    </div>
+                    <ul class="inf-list">
+                        <li><a class="footer-social" href="https://vk.com/3donlyforyou"><img class="footer-social-img"
+                                    src="img/vk.svg" alt=""></a></li>
+                        <li><a class="footer-social" href="https://t.me/+F3Vemm5sZTtiNDUy"><img
+                                    class="footer-social-img" src="img/tg.svg" alt=""></a></li>
+                    </ul>
+                </div>
+                <ul class="form-list">
+                    <li class="form-item-main">Покупателям</li>
+                    <li ><a class="form-item" href="https://aliexpress.ru/wholesale?SearchText=миниатюры+для+настольных+игр">Перейти в магазин</a></li>
+                    <li ><a class="form-item" href="https://vk.com/@3donlyforyou-rukovodstvo-polzovatelya">Как сделать заказ</a></li>
+                    <li ><a class="form-item" href="https://vk.com/topic-218884277_49313311">Доставка и оплата</a></li>
+                    <li ><a class="form-item" href="https://vk.com/topic-218884277_49310659">FAQ</a></li>
+                    <li ><a class="form-item" href="https://vk.com/3donlyforyou">Круг друзей</a></li>
+                    <li ><a class="form-item" href="https://vk.com/3donlyforyou">Акции</a></li>
+                </ul>
+                <ul class="form-list form-list_lef">
+                    <li class="form-item-main">Для партнеров</li>
+                    <li ><a class="form-item" href="https://vk.com/@3donlyforyou-politika-v-otnoshenii-obrabotki-personalnyh-dannyh">«Политика отношении персональных данных»</a></li>
+                    <li class="form-item"><a class="form-item" href="https://vk.com/@3donlyforyou-sotrudnichestvo-i-gipoteza-rosta">«Сотрудничество»</a></li>
+                </ul>
+                <div class="form">
+                    <p class="form-title">Появился вопрос? Напишите нам!</p>
+                    <textarea class="form-text" placeholder="Ваше сообщение"></textarea>
+                    <input class="form-name" type='text' placeholder="Введите ваше имя">
+                    <div class="form-box">
+                        <input class="form-email" type='email' placeholder="Введите ваш телефон или Email">
+                        <button class="form-button" onclick="this.className='form-button-pressed'"></button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
